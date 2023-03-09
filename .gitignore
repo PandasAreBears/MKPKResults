@@ -3,6 +3,8 @@
 dist
 .tox
 *.egg-info
+bin
+.vscode
 
 # Do not include pycache files
 *.pyc

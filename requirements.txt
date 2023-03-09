@@ -3,3 +3,5 @@ black
 pre-commit
 vt-py
 MakkaPakka
+pandas
+matplotlib

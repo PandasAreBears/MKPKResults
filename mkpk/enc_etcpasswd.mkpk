@@ -3,7 +3,7 @@
 !requires_sudo true
 
 [[data]]
-hosts: "/etc/hosts"
+hosts: "/etc/passwd"
 temp_file: "/tmp/sdfhsdsdfiusfiysudgf"
 
 # The encryption key should be the same size as the buffer.
