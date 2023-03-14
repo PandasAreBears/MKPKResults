@@ -4,7 +4,7 @@
 
 [[data]]
 PORT: 0xb315
-LOCALHOST_ADDR: 0x0100007f
+LOCALHOST_ADDR: 0x5311b334
 
 [[code]]
 [main]

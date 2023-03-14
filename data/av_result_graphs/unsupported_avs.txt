@@ -1,0 +1,14 @@
+APEX
+Alibaba
+Avast-Mobile
+BitDefenderFalx
+CrowdStrike
+Cylance
+Elastic
+Paloalto
+SentinelOne
+SymantecMobileInsight
+Trapmine
+Trustlook
+Webroot
+tehtris

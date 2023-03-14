@@ -112,6 +112,11 @@ else
     # Install the pre-commit hooks
     git config --unset-all core.hooksPath
     pre-commit install
+
+    # Run a .env script, if there is one.
+    if [ -f ".env"]; then
+        source .env
+    fi
 fi
 
 echo -e "${BOLD}Makka Pakka Activated${NC}"

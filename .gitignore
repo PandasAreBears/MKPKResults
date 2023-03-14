@@ -12,3 +12,4 @@ bin
 # Local files
 .coverage
 *.gdb
+.env

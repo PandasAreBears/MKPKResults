@@ -1,7 +1,12 @@
 from pathlib import Path
 from typing import Generator
 
-from injection import InjectionVariant
+
+class InjectionVariant:
+    NONE = 0
+    REVERSE_TCP = 1
+    ENCRYPT_PASSWD = 2
+    EGRESS_PASSWDS = 3
 
 
 def get_standard_bins(num_bins: int) -> Generator[str, None, None]:

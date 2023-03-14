@@ -5,3 +5,4 @@ vt-py
 MakkaPakka
 pandas
 matplotlib
+ipykernel
