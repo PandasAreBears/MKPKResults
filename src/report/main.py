@@ -18,7 +18,7 @@ def main():
     i: int = 1
     for original_file in get_standard_bins(100):
         # Resume...
-        if i < 81:
+        if i < 0:
             i += 1
             continue
 

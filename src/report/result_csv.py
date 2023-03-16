@@ -3,7 +3,7 @@ from pathlib import Path
 
 import vt
 
-id = 23480
+id = 0
 file_handle: TextIOWrapper = None
 
 
