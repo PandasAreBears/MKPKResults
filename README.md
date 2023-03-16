@@ -19,13 +19,13 @@ development of malware injection techniques to add to the field of
 vulnerability research.
 
 # Structure
-mkpk - Contains the malicious Makka Pakka source files.
+mkpk - Contains the malicious Makka Pakka source files.\
 data - stores the data outputs of the experiment, this is the raw data, and the
-    graphical visualisations.
-src/analysis - Generates the grpahical visualisations based on the raw data.
+    graphical visualisations.\
+src/analysis - Generates the grpahical visualisations based on the raw data.\
 src/gather - Generates the infected binaries and stores them in the top-level
-    `bin` directory.
-src/reprot - Queries virus total with the infected binaries, and stores the
+    `bin` directory.\
+src/report - Queries virus total with the infected binaries, and stores the
     results in the data directory.
 
 # Data Reproduction Methodology
